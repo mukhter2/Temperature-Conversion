@@ -1,18 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-class Clock extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
 
-    render() {
-        return (
-            <h1 className="heading">
-                <span>Hello world, date: {new Date().toLocaleTimeString()}</span>
-            </h1>
-        );
-    }
-}
-ReactDOM.render(<Clock />, document.getElementById('root'));
+reportWebVitals();
