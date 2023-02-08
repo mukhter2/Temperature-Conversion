@@ -1,12 +1,7 @@
-import Form from './components/Form';
+import Calculator from './components/Calculator';
 
 function App() {
-    return (
-        <div>
-            {/* <ClockList quantities={quantities} /> */}
-            <Form />
-        </div>
-    );
+    return <Calculator />;
 }
 
 export default App;
